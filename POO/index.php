@@ -21,10 +21,12 @@
     // miCoche.cantidadCombustible
     // $miCoche->cantidadCombustible
 
-    echo $miCoche->getCantidadCombustible();
+    $miCoche->pintaInfo();
 
     $otroCoche->repostarCombustible(50);
     $otroCoche->mover(100);
-    echo $otroCoche->getCantidadCombustible();
+    //echo $otroCoche->getCantidadCombustible();
 
+    $otroCoche->pintaInfo();
 
+    $ferrari->pintaInfo();

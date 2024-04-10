@@ -84,6 +84,14 @@ class Coche
         $this->numKilometroRecorridos = $numKilometroRecorridos;
     }
 
-
+    function pintaInfo()
+    {
+        echo "<ul>";
+        echo "<li>Marca: $this->marca</li>";
+        echo "<li>Modelo: $this->modelo</li>";
+        echo "<li>CantidadCombustible: $this->cantidadCombustible</li>";
+        echo "<li>KmRecorridos: $this->numKilometroRecorridos</li>";
+        echo "</ul>";
+    }
 
 }
