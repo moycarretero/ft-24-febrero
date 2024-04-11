@@ -1,5 +1,5 @@
 <?php
-namespace Facebook\Login;
+namespace Upgrade\Ecommerce\Login\Facebook;
 
 class User
 {

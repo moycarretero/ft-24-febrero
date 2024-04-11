@@ -1,0 +1,11 @@
+{
+    "name": "upgrade/ecommerce",
+    "description": "Ejemplo de autoload con composer",
+    "autoload": {
+        "psr-4": {
+            "Upgrade\\Ecommerce\\": "src/",
+            "LoginGoogle\\": "src/Login/Google/"
+        }
+    },
+    "require": {}
+}

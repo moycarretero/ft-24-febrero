@@ -1,5 +1,5 @@
 <?php
-namespace Google;
+namespace LoginGoogle;
 
 class User
 {

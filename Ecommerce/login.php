@@ -1,16 +1,17 @@
 <?php
 
-require_once "Facebook/User.php";
-require_once "Google/User.php";
+require_once "vendor/autoload.php";
 
-use Google\User as GoogleUser;
-use Facebook\Login\User as FacebookUser;
+use Upgrade\Ecommerce\Login\Facebook\User as FacebookUser;
+use LoginGoogle\User as GoogleUser;
 
 
 $type = 'Google';
 
 if ($type == 'Google'){
     $googleUser = new GoogleUser();
+
+    echo "Usuario logado con Google";
 
     return $googleUser->login("saf", 222);
 
