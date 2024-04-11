@@ -4,7 +4,7 @@
     require_once "head.html";
 
     $miCoche = new Coche(
-        "Ford", "Focus");
+        modelo: "Focus", marca:"Ford");
 
 
     $otroCoche = new Coche(
@@ -18,7 +18,8 @@
     $miCoche->mover(100);
     $miCoche->mover(250);
 
-    $miCoche->setMatricula("4456XCV");
+    echo $miCoche->cantidadCombustible;
+
 
     // miCoche.cantidadCombustible
     // $miCoche->cantidadCombustible
@@ -30,6 +31,10 @@
     $otroCoche->repostarCombustible(50);
     $otroCoche->mover(100);
     //echo $otroCoche->getCantidadCombustible();
+
+    $otroCoche->pintaInfo();
+
+    $otroCoche->mover(5000);
 
     $otroCoche->pintaInfo();
 

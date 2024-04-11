@@ -1,12 +1,13 @@
 <?php
 
+require_once "Vehiculo.php";
 
-class Coche
+class Coche extends Vehiculo
 {
-    private string $matricula;
+
     private string $marca;
     private string $modelo;
-    private float $cantidadCombustible;
+    public float $cantidadCombustible;
     private int $numKilometroRecorridos;
 
     public function __construct(string $marca, string $modelo)
@@ -16,6 +17,8 @@ class Coche
 
         $this->cantidadCombustible = 0;
         $this->numKilometroRecorridos = 0;
+
+        $this->matricula = 'adfasd';
     }
 
     function mover(int $distancia)
@@ -34,15 +37,28 @@ class Coche
 
     }
 
-    public function getMatricula(): string
-    {
-        return $this->matricula;
+    public function  functionMyGrande(){
+        $this->trocitoUno();
+        $this->trocitoDos();
+        $this->trocitoTres();
     }
 
-    public function setMatricula(string $matricula): void
+    private function trocitoUno()
     {
-        $this->matricula = $matricula;
+
     }
+
+    private function trocitoDos()
+    {
+
+    }
+
+    private function trocitoTres()
+    {
+
+    }
+
+
 
     public function getMarca(): string
     {
@@ -51,6 +67,10 @@ class Coche
 
     public function setMarca(string $marca): void
     {
+        /*
+         * Primero hago petición a un API para asegurarme que la Marca existe
+         * */
+
         $this->marca = $marca;
     }
 
