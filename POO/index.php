@@ -1,6 +1,8 @@
 <?php
     require_once "Coche.php";
 
+    require_once "head.html";
+
     $miCoche = new Coche(
         "Ford", "Focus");
 
@@ -23,10 +25,15 @@
 
     $miCoche->pintaInfo();
 
+
+
     $otroCoche->repostarCombustible(50);
     $otroCoche->mover(100);
     //echo $otroCoche->getCantidadCombustible();
 
     $otroCoche->pintaInfo();
+
+
+
 
     $ferrari->pintaInfo();
