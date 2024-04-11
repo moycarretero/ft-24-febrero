@@ -1,10 +1,12 @@
 <?php
 
-class Vehiculo
+abstract class Vehiculo
 {
     private int $numRuedas;
 
     protected string $matricula;
+
+    public abstract function mover(float $distancia);
 
     public function getNumRuedas(): int
     {

@@ -21,7 +21,7 @@ class Coche extends Vehiculo
         $this->matricula = 'adfasd';
     }
 
-    function mover(int $distancia)
+    public function mover(float $distancia)
     {
         $this->numKilometroRecorridos += $distancia;
         $this->cantidadCombustible -= $distancia*0.05;

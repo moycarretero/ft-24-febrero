@@ -1,5 +1,6 @@
 <?php
     require_once "Coche.php";
+    require_once "Vehiculo.php";
 
     require_once "head.html";
 
@@ -38,7 +39,6 @@
 
     $otroCoche->pintaInfo();
 
-
-
-
     $ferrari->pintaInfo();
+
+    $vehiculo = new Vehiculo();
